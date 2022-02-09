@@ -8,9 +8,19 @@ body {
 }
 
 header {
-    padding: 20px 150px;
     background-color: lightblue;
     border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 75px;
 }
 
 header nav ul {
@@ -36,6 +46,11 @@ header nav ul li a {
     header {
         background-color: darkblue;
     }
+
+    header nav h3 {
+        color: white;
+    }
+
 
     header nav ul li a {
         color: white;
