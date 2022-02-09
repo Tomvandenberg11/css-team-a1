@@ -1,0 +1,16 @@
+* {
+    list-style-type: none;
+}
+
+main ul {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+main ul li {flex: 0 0 350px;height: 200px;background-color: white;margin: 15px;}
+
+main ul li p {
+    writing-mode: horizontal-tb;
+}

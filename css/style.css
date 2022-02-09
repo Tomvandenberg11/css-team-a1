@@ -104,7 +104,7 @@ main article {
   grid-gap: 50px;
 }
 
-main article section {
+html body div main article section {
   height: 300px;
   background-color: var(--lightTheme-main-color);
   padding: 15px 25px;
@@ -117,11 +117,11 @@ main article section {
   box-shadow: 9px 9px var(--lightTheme-main-darker-color);
 }
 
-main article section:hover {
+html body div main article section:hover {
   background-color: cornflowerblue;
 }
 
-main article section:active {
+html body div main article section:active {
   background-color: royalblue;
   box-shadow: 5px 5px #666;
   transform: translateY(4px);
@@ -148,15 +148,15 @@ main article section:active {
     display: none;
   }
 
-  input:checked ~ div header nav div {
+  input:checked ~ html body div header nav div {
     background-image: url("../images/teama1light.svg");
   }
 
-  input:not(:checked) ~ div header nav ul li a {
+  input:not(:checked) ~ html body div header nav ul li a {
     color: var(--darkTheme-text-color);
   }
 
-  input:not(:checked) ~ div main article section {
+  input:not(:checked) ~ html body div main article section {
     background-color: var(--darkTheme-container-bg);
     box-shadow: none;
   }
