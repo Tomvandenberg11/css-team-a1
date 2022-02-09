@@ -6,6 +6,13 @@
   --darkTheme-main-color: #045757;
   --darkTheme-main-darker-color: #044343;
   --darkTheme-container-bg: #333333;
+
+  --lightTheme-background: #F6F5F5;
+  --lightTheme-text-color: #333333;
+  --lightTheme-main-color: #3BB4C1;
+  --lightTheme-main-darker-color: #048998;
+  --lightTheme-container-bg: #E9E4E6;
+
 }
 
 * {
@@ -44,8 +51,8 @@ body label:hover {
 }
 /**** HEADER ****/
 header {
-  background-color: lightblue;
-  border-bottom: 2px solid black;
+  background-color: var(--lightTheme-main-color);
+  border-bottom: 2px solid var(--lightTheme-main-darker-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,7 +106,7 @@ main article {
 
 main article section {
   height: 300px;
-  background-color: lightgray;
+  background-color: var(--lightTheme-main-color);
   padding: 15px 25px;
   font-size: 24px;
   text-align: center;
@@ -107,7 +114,7 @@ main article section {
   outline: none;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 9px 9px #999;
+  box-shadow: 9px 9px var(--lightTheme-main-darker-color);
 }
 
 main article section:hover {
