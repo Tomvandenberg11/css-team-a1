@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Fingers */
+h1 {
+  writing-mode: vertical-rl;
+  color: #e8beac;
+}
+h2 {
+  writing-mode: vertical-rl;
+  color: #e8beac;
+}
+h3 {
+  writing-mode: vertical-rl;
+  color: #e8beac;
+}
+h4 {
+  writing-mode: vertical-rl;
+  color: #e8beac;
+}
+h5 {
+  writing-mode: vertical-rl;
+  margin-right: 110px;
+  color: #e8beac;
+}
+
+h6 {
+  writing-mode: horizontal-tb;
+  font-size: 2.8vh;
+  color: #c98c72;
+}
+
+h7 {
+  writing-mode: vertical-lr;
+  margin-right: 20px;
+  font-size: 3vh;
+  font-weight: 900;
+  color: #dc8b69;
+}
+
+h8 {
+  writing-mode: vertical-lr;
+  margin-right: 20px;
+  font-size: 3vh;
+  font-weight: 900;
+  color: #dc8b69;
+  margin-top: 2%;
+}
+div {
+  font-size: 2.5vh;
+  font-family: Bahnschrift Condensed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+}
