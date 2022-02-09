@@ -7,6 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/**** HEADER ****/
 header {
     background-color: lightblue;
     border-bottom: 2px solid black;
@@ -38,21 +39,63 @@ header nav ul li a {
     text-decoration: none;
 }
 
-@media screen and (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-    }
-
-    header {
-        background-color: darkblue;
-    }
-
-    header nav h3 {
-        color: white;
-    }
-
-
-    header nav ul li a {
-        color: white;
-    }
+/**** MAIN ****/
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+    width: 100%;
 }
+
+main section {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+}
+
+main section article {
+    height: 300px;
+    background-color: lightgray;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 9px 9px #999;
+}
+
+main section article:hover {background-color: cornflowerblue}
+
+main section article:active {
+    background-color: royalblue;
+    box-shadow: 5px 5px #666;
+    transform: translateY(4px);
+}
+
+/*@media screen and (prefers-color-scheme: dark) {*/
+/*    body {*/
+/*        background-color: black;*/
+/*    }*/
+
+/*    header {*/
+/*        background-color: darkblue;*/
+/*    }*/
+
+/*    header nav h3 {*/
+/*        color: white;*/
+/*    }*/
+
+
+/*    header nav ul li a {*/
+/*        color: white;*/
+/*    }*/
+
+/*    main section article {*/
+/*        background-color: #333;*/
+/*        box-shadow: none;*/
+/*    }*/
+/*}*/
