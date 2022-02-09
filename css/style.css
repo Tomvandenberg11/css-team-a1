@@ -15,8 +15,33 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: table;
 }
 
+body input {
+  visibility: hidden;
+  position: absolute;
+}
+
+body label {
+  position: absolute;
+  right: 70px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+body label span {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+body label:hover {
+  cursor: pointer;
+}
 /**** HEADER ****/
 header {
   background-color: lightblue;
@@ -34,19 +59,14 @@ header nav {
   height: 75px;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: flex-end;
-}
-
-header nav ul li {
-  list-style-type: none;
-}
-
-header nav ul li a {
-  color: black;
-  margin-left: 30px;
-  text-decoration: none;
+header nav div {
+  background-image: url("../images/teama1dark.svg");
+  width: 100px;
+  height: 50px;
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 img {
@@ -54,12 +74,20 @@ img {
 }
 
 /**** MAIN ****/
+div {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+}
+
 main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px 0;
+  position: relative;
   width: 100%;
+  height: 100%;
+  padding-top: 100px;
 }
 
 main article {
@@ -93,23 +121,35 @@ main article section:active {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  body {
+  input:not(:checked) ~ div {
     background-color: var(--darkTheme-background);
   }
 
-  header {
+  input:not(:checked) ~ div header {
     background-color: var(--darkTheme-main-color);
   }
 
-  header nav h3 {
+  input:not(:checked) ~ div header nav h3 {
     color: var(--darkTheme-text-color);
   }
 
-  header nav ul li a {
+  input:not(:checked) ~ label span:last-of-type {
+    display: none;
+  }
+
+  input:checked ~ label span:first-of-type {
+    display: none;
+  }
+
+  input:checked ~ div header nav div {
+    background-image: url("../images/teama1light.svg");
+  }
+
+  input:not(:checked) ~ div header nav ul li a {
     color: var(--darkTheme-text-color);
   }
 
-  main article section {
+  input:not(:checked) ~ div main article section {
     background-color: var(--darkTheme-container-bg);
     box-shadow: none;
   }
