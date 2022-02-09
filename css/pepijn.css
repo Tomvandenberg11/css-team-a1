@@ -48,11 +48,13 @@ h8 {
   color: #dc8b69;
   margin-top: 2%;
 }
-div {
-  font-size: 2.5vh;
-  font-family: Bahnschrift Condensed;
+strong {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 10px;
+}
+
+strong > * {
+  font-size: 24px;
 }
