@@ -76,26 +76,26 @@ main article section:active {
     transform: translateY(4px);
 }
 
-/*@media screen and (prefers-color-scheme: dark) {*/
-/*    body {*/
-/*        background-color: black;*/
-/*    }*/
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+    }
 
-/*    header {*/
-/*        background-color: darkblue;*/
-/*    }*/
+    header {
+        background-color: darkblue;
+    }
 
-/*    header nav h3 {*/
-/*        color: white;*/
-/*    }*/
+    header nav h3 {
+        color: white;
+    }
 
 
-/*    header nav ul li a {*/
-/*        color: white;*/
-/*    }*/
+   header nav ul li a {
+       color: white;
+   }
 
-/*    main article section {*/
-/*        background-color: #333;*/
-/*        box-shadow: none;*/
-/*    }*/
-/*}*/
+   main article section {
+       background-color: #333;
+       box-shadow: none;
+   }
+}
