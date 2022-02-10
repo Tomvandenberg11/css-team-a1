@@ -9,8 +9,56 @@ main ul {
     justify-content: center;
 }
 
-main ul li {flex: 0 0 350px;height: 200px;background-color: white;margin: 15px;}
+main ul li {
+    flex: 0 0 350px;
+    height: 200px;
+    background-color: var(--lightTheme-main-color);
+    margin: 15px;
+    box-shadow: 9px 9px var(--lightTheme-main-darker-color);
+}
 
 main ul li p {
     writing-mode: horizontal-tb;
 }
+
+@media print {
+ 
+    /*   Styling resetten
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    */
+
+    @page {
+        margin: 2cm;
+    }
+    body {
+        font-size: 28px;
+    }
+    main ul li:nth-child(4){
+        page-break-after:always;
+    }
+    nav, header, span, body label{
+        display:none;
+    }
+    body div main ul li {
+        background-color: var(--lightTheme-main-color);
+        flex: 0 0 95%;
+        box-shadow:1px 1px 1px var(--lightTheme-text-color);
+        page-break-before: always;
+
+        /* hiermee zorg je dat de achtergrondkleur wel word doorgevoerd */
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+    
