@@ -32,7 +32,7 @@ h6 {
   color: #c98c72;
 }
 
-h7 {
+h2:nth-of-type(2) {
   writing-mode: vertical-lr;
   margin-right: 20px;
   font-size: 3vh;
@@ -40,7 +40,7 @@ h7 {
   color: #dc8b69;
 }
 
-h8 {
+h2:first-of-type {
   writing-mode: vertical-lr;
   margin-right: 20px;
   font-size: 3vh;
