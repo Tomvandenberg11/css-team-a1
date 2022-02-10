@@ -48,13 +48,13 @@ h8 {
   color: #dc8b69;
   margin-top: 2%;
 }
-strong {
+#pepijn div > div {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 10px;
 }
 
-strong > * {
-  font-size: 24px;
+#pepijn div > div > * {
+  font-size: 28px;
 }
